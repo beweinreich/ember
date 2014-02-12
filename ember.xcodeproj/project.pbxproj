@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE04F22649EF4ADF8D60F20C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD7F8205B5940E88620CC5F /* libPods.a */; };
+		C317BAFE18AB2569002D1802 /* BWTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C317BAFD18AB2569002D1802 /* BWTableView.m */; };
+		C354829E18A7D51800F7DB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829D18A7D51800F7DB89 /* Foundation.framework */; };
+		C35482A018A7D51800F7DB89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829F18A7D51800F7DB89 /* CoreGraphics.framework */; };
+		C35482A218A7D51800F7DB89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35482A118A7D51800F7DB89 /* UIKit.framework */; };
+		C35482A818A7D51800F7DB89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C35482A618A7D51800F7DB89 /* InfoPlist.strings */; };
+		C35482AA18A7D51800F7DB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482A918A7D51800F7DB89 /* main.m */; };
+		C35482AE18A7D51800F7DB89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482AD18A7D51800F7DB89 /* AppDelegate.m */; };
+		C35482B118A7D51800F7DB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35482AF18A7D51800F7DB89 /* Main.storyboard */; };
+		C35482B618A7D51800F7DB89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35482B518A7D51800F7DB89 /* Images.xcassets */; };
+		C35482BD18A7D51800F7DB89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35482BC18A7D51800F7DB89 /* XCTest.framework */; };
+		C35482BE18A7D51800F7DB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829D18A7D51800F7DB89 /* Foundation.framework */; };
+		C35482BF18A7D51800F7DB89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35482A118A7D51800F7DB89 /* UIKit.framework */; };
+		C35482C718A7D51800F7DB89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C35482C518A7D51800F7DB89 /* InfoPlist.strings */; };
+		C35482C918A7D51800F7DB89 /* emberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482C818A7D51800F7DB89 /* emberTests.m */; };
+		C35482DE18A7D54B00F7DB89 /* CompletedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482D318A7D54B00F7DB89 /* CompletedView.m */; };
+		C35482DF18A7D54B00F7DB89 /* EmberDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482D518A7D54B00F7DB89 /* EmberDataModel.m */; };
+		C35482E018A7D54B00F7DB89 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482D718A7D54B00F7DB89 /* MappingProvider.m */; };
+		C35482E218A7D54B00F7DB89 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482DB18A7D54B00F7DB89 /* UserCell.m */; };
+		C35482E318A7D54B00F7DB89 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482DD18A7D54B00F7DB89 /* UsersViewController.m */; };
+		C35482E618A7DA7C00F7DB89 /* Ember.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C35482E418A7DA7C00F7DB89 /* Ember.xcdatamodeld */; };
+		C35482EC18A9259D00F7DB89 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482EB18A9259D00F7DB89 /* User.m */; };
+		C35482EF18A92E0400F7DB89 /* NSDate+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482EE18A92E0400F7DB89 /* NSDate+Methods.m */; };
+		C38A607218A97EF7008A3C44 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C38A607118A97EF7008A3C44 /* UIAlertView+Blocks.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C35482C018A7D51800F7DB89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C354829218A7D51800F7DB89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C354829918A7D51800F7DB89;
+			remoteInfo = ember;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AD7F8205B5940E88620CC5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C317BAFC18AB2569002D1802 /* BWTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTableView.h; sourceTree = "<group>"; };
+		C317BAFD18AB2569002D1802 /* BWTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTableView.m; sourceTree = "<group>"; };
+		C354829A18A7D51800F7DB89 /* ember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ember.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C354829D18A7D51800F7DB89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C354829F18A7D51800F7DB89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C35482A118A7D51800F7DB89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C35482A518A7D51800F7DB89 /* ember-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ember-Info.plist"; sourceTree = "<group>"; };
+		C35482A718A7D51800F7DB89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C35482A918A7D51800F7DB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C35482AB18A7D51800F7DB89 /* ember-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ember-Prefix.pch"; sourceTree = "<group>"; };
+		C35482AC18A7D51800F7DB89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C35482AD18A7D51800F7DB89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C35482B018A7D51800F7DB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C35482B518A7D51800F7DB89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C35482BB18A7D51800F7DB89 /* emberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35482BC18A7D51800F7DB89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C35482C418A7D51800F7DB89 /* emberTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "emberTests-Info.plist"; sourceTree = "<group>"; };
+		C35482C618A7D51800F7DB89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C35482C818A7D51800F7DB89 /* emberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = emberTests.m; sourceTree = "<group>"; };
+		C35482D218A7D54B00F7DB89 /* CompletedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedView.h; sourceTree = "<group>"; };
+		C35482D318A7D54B00F7DB89 /* CompletedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedView.m; sourceTree = "<group>"; };
+		C35482D418A7D54B00F7DB89 /* EmberDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmberDataModel.h; sourceTree = "<group>"; };
+		C35482D518A7D54B00F7DB89 /* EmberDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmberDataModel.m; sourceTree = "<group>"; };
+		C35482D618A7D54B00F7DB89 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
+		C35482D718A7D54B00F7DB89 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
+		C35482DA18A7D54B00F7DB89 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		C35482DB18A7D54B00F7DB89 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		C35482DC18A7D54B00F7DB89 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		C35482DD18A7D54B00F7DB89 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
+		C35482E518A7DA7C00F7DB89 /* Ember.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ember.xcdatamodel; sourceTree = "<group>"; };
+		C35482EA18A9259D00F7DB89 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C35482EB18A9259D00F7DB89 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C35482ED18A92E0400F7DB89 /* NSDate+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Methods.h"; sourceTree = "<group>"; };
+		C35482EE18A92E0400F7DB89 /* NSDate+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Methods.m"; sourceTree = "<group>"; };
+		C38A607018A97EF7008A3C44 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		C38A607118A97EF7008A3C44 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		DDA4508BD51648A8A575E365 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C354829718A7D51800F7DB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482A018A7D51800F7DB89 /* CoreGraphics.framework in Frameworks */,
+				C35482A218A7D51800F7DB89 /* UIKit.framework in Frameworks */,
+				C354829E18A7D51800F7DB89 /* Foundation.framework in Frameworks */,
+				BE04F22649EF4ADF8D60F20C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35482B818A7D51800F7DB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482BD18A7D51800F7DB89 /* XCTest.framework in Frameworks */,
+				C35482BF18A7D51800F7DB89 /* UIKit.framework in Frameworks */,
+				C35482BE18A7D51800F7DB89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C317BAFF18AB2576002D1802 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C35482DA18A7D54B00F7DB89 /* UserCell.h */,
+				C35482DB18A7D54B00F7DB89 /* UserCell.m */,
+				C35482D218A7D54B00F7DB89 /* CompletedView.h */,
+				C35482D318A7D54B00F7DB89 /* CompletedView.m */,
+				C317BAFC18AB2569002D1802 /* BWTableView.h */,
+				C317BAFD18AB2569002D1802 /* BWTableView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C317BB0018AB2582002D1802 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C38A607018A97EF7008A3C44 /* UIAlertView+Blocks.h */,
+				C38A607118A97EF7008A3C44 /* UIAlertView+Blocks.m */,
+				C35482ED18A92E0400F7DB89 /* NSDate+Methods.h */,
+				C35482EE18A92E0400F7DB89 /* NSDate+Methods.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C317BB0118AB2590002D1802 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C35482E418A7DA7C00F7DB89 /* Ember.xcdatamodeld */,
+				C35482EA18A9259D00F7DB89 /* User.h */,
+				C35482EB18A9259D00F7DB89 /* User.m */,
+				C35482D418A7D54B00F7DB89 /* EmberDataModel.h */,
+				C35482D518A7D54B00F7DB89 /* EmberDataModel.m */,
+				C35482D618A7D54B00F7DB89 /* MappingProvider.h */,
+				C35482D718A7D54B00F7DB89 /* MappingProvider.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C317BB0218AB25A0002D1802 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C35482DC18A7D54B00F7DB89 /* UsersViewController.h */,
+				C35482DD18A7D54B00F7DB89 /* UsersViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C354829118A7D51800F7DB89 = {
+			isa = PBXGroup;
+			children = (
+				C35482A318A7D51800F7DB89 /* ember */,
+				C35482C218A7D51800F7DB89 /* emberTests */,
+				C354829C18A7D51800F7DB89 /* Frameworks */,
+				C354829B18A7D51800F7DB89 /* Products */,
+				DDA4508BD51648A8A575E365 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C354829B18A7D51800F7DB89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C354829A18A7D51800F7DB89 /* ember.app */,
+				C35482BB18A7D51800F7DB89 /* emberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C354829C18A7D51800F7DB89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C354829D18A7D51800F7DB89 /* Foundation.framework */,
+				C354829F18A7D51800F7DB89 /* CoreGraphics.framework */,
+				C35482A118A7D51800F7DB89 /* UIKit.framework */,
+				C35482BC18A7D51800F7DB89 /* XCTest.framework */,
+				3AD7F8205B5940E88620CC5F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C35482A318A7D51800F7DB89 /* ember */ = {
+			isa = PBXGroup;
+			children = (
+				C35482AC18A7D51800F7DB89 /* AppDelegate.h */,
+				C35482AD18A7D51800F7DB89 /* AppDelegate.m */,
+				C35482AF18A7D51800F7DB89 /* Main.storyboard */,
+				C317BB0218AB25A0002D1802 /* Controllers */,
+				C317BB0118AB2590002D1802 /* Models */,
+				C317BAFF18AB2576002D1802 /* Views */,
+				C317BB0018AB2582002D1802 /* Categories */,
+				C35482B518A7D51800F7DB89 /* Images.xcassets */,
+				C35482A418A7D51800F7DB89 /* Supporting Files */,
+			);
+			path = ember;
+			sourceTree = "<group>";
+		};
+		C35482A418A7D51800F7DB89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35482A518A7D51800F7DB89 /* ember-Info.plist */,
+				C35482A618A7D51800F7DB89 /* InfoPlist.strings */,
+				C35482A918A7D51800F7DB89 /* main.m */,
+				C35482AB18A7D51800F7DB89 /* ember-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C35482C218A7D51800F7DB89 /* emberTests */ = {
+			isa = PBXGroup;
+			children = (
+				C35482C818A7D51800F7DB89 /* emberTests.m */,
+				C35482C318A7D51800F7DB89 /* Supporting Files */,
+			);
+			path = emberTests;
+			sourceTree = "<group>";
+		};
+		C35482C318A7D51800F7DB89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C35482C418A7D51800F7DB89 /* emberTests-Info.plist */,
+				C35482C518A7D51800F7DB89 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C354829918A7D51800F7DB89 /* ember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35482CC18A7D51800F7DB89 /* Build configuration list for PBXNativeTarget "ember" */;
+			buildPhases = (
+				8BD29BCA66E144A68C114D14 /* Check Pods Manifest.lock */,
+				C354829618A7D51800F7DB89 /* Sources */,
+				C354829718A7D51800F7DB89 /* Frameworks */,
+				C354829818A7D51800F7DB89 /* Resources */,
+				AD7A12DD82F34435AFEB011C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ember;
+			productName = ember;
+			productReference = C354829A18A7D51800F7DB89 /* ember.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C35482BA18A7D51800F7DB89 /* emberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35482CF18A7D51800F7DB89 /* Build configuration list for PBXNativeTarget "emberTests" */;
+			buildPhases = (
+				C35482B718A7D51800F7DB89 /* Sources */,
+				C35482B818A7D51800F7DB89 /* Frameworks */,
+				C35482B918A7D51800F7DB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35482C118A7D51800F7DB89 /* PBXTargetDependency */,
+			);
+			name = emberTests;
+			productName = emberTests;
+			productReference = C35482BB18A7D51800F7DB89 /* emberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C354829218A7D51800F7DB89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = bw;
+				TargetAttributes = {
+					C354829918A7D51800F7DB89 = {
+						DevelopmentTeam = CQ5H8UTC2K;
+					};
+					C35482BA18A7D51800F7DB89 = {
+						TestTargetID = C354829918A7D51800F7DB89;
+					};
+				};
+			};
+			buildConfigurationList = C354829518A7D51800F7DB89 /* Build configuration list for PBXProject "ember" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C354829118A7D51800F7DB89;
+			productRefGroup = C354829B18A7D51800F7DB89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C354829918A7D51800F7DB89 /* ember */,
+				C35482BA18A7D51800F7DB89 /* emberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C354829818A7D51800F7DB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482B618A7D51800F7DB89 /* Images.xcassets in Resources */,
+				C35482A818A7D51800F7DB89 /* InfoPlist.strings in Resources */,
+				C35482B118A7D51800F7DB89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35482B918A7D51800F7DB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482C718A7D51800F7DB89 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BD29BCA66E144A68C114D14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7A12DD82F34435AFEB011C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C354829618A7D51800F7DB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482EC18A9259D00F7DB89 /* User.m in Sources */,
+				C35482E318A7D54B00F7DB89 /* UsersViewController.m in Sources */,
+				C35482AE18A7D51800F7DB89 /* AppDelegate.m in Sources */,
+				C35482EF18A92E0400F7DB89 /* NSDate+Methods.m in Sources */,
+				C35482DE18A7D54B00F7DB89 /* CompletedView.m in Sources */,
+				C35482E218A7D54B00F7DB89 /* UserCell.m in Sources */,
+				C35482E018A7D54B00F7DB89 /* MappingProvider.m in Sources */,
+				C35482AA18A7D51800F7DB89 /* main.m in Sources */,
+				C38A607218A97EF7008A3C44 /* UIAlertView+Blocks.m in Sources */,
+				C317BAFE18AB2569002D1802 /* BWTableView.m in Sources */,
+				C35482DF18A7D54B00F7DB89 /* EmberDataModel.m in Sources */,
+				C35482E618A7DA7C00F7DB89 /* Ember.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35482B718A7D51800F7DB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35482C918A7D51800F7DB89 /* emberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C35482C118A7D51800F7DB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C354829918A7D51800F7DB89 /* ember */;
+			targetProxy = C35482C018A7D51800F7DB89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C35482A618A7D51800F7DB89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C35482A718A7D51800F7DB89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C35482AF18A7D51800F7DB89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C35482B018A7D51800F7DB89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C35482C518A7D51800F7DB89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C35482C618A7D51800F7DB89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C35482CA18A7D51800F7DB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C35482CB18A7D51800F7DB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C35482CD18A7D51800F7DB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA4508BD51648A8A575E365 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "ember/ember-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D9D9C60E-783F-42CF-9717-7E0DB14AB8E8";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C35482CE18A7D51800F7DB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA4508BD51648A8A575E365 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "ember/ember-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "688AF283-B7F1-4C8D-83BA-E5602870963F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C35482D018A7D51800F7DB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ember.app/ember";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "emberTests/emberTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C35482D118A7D51800F7DB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ember.app/ember";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ember/ember-Prefix.pch";
+				INFOPLIST_FILE = "emberTests/emberTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C354829518A7D51800F7DB89 /* Build configuration list for PBXProject "ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35482CA18A7D51800F7DB89 /* Debug */,
+				C35482CB18A7D51800F7DB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35482CC18A7D51800F7DB89 /* Build configuration list for PBXNativeTarget "ember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35482CD18A7D51800F7DB89 /* Debug */,
+				C35482CE18A7D51800F7DB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C35482CF18A7D51800F7DB89 /* Build configuration list for PBXNativeTarget "emberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35482D018A7D51800F7DB89 /* Debug */,
+				C35482D118A7D51800F7DB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C35482E418A7DA7C00F7DB89 /* Ember.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C35482E518A7DA7C00F7DB89 /* Ember.xcdatamodel */,
+			);
+			currentVersion = C35482E518A7DA7C00F7DB89 /* Ember.xcdatamodel */;
+			path = Ember.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C354829218A7D51800F7DB89 /* Project object */;
+}
