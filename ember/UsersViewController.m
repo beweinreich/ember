@@ -51,7 +51,12 @@
     [self.tableView reloadData];
     NSSortDescriptor *sortByDate = [NSSortDescriptor sortDescriptorWithKey:@"reminderDate" ascending:YES];
     NSSortDescriptor *sortByHasReminder = [NSSortDescriptor sortDescriptorWithKey:@"hasReminder" ascending:NO];
+    self.fetchedResultsController.delegate = self;
     [self fetchFromLocal:@"User" andSortDescriptors:@[sortByHasReminder, sortByDate] andPredicate:@"(tracking == 1)"];
+    [self.refreshControl endRefreshing];
+    
+    id<NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][0];
+    NSLog(@"%lu",(unsigned long)[sectionInfo numberOfObjects]);
 }
 
 
@@ -76,22 +81,11 @@
 }
 
 
+
 #pragma mark Protocols & Delegates
 -(void)completedViewIsDone:(User *)user {
     [self.tableView reloadData];
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -103,15 +97,13 @@
 
 - (void)fetchFromLocal:(NSString *)entityName andSortDescriptors:(NSArray *)sortDescriptors andPredicate:(NSString *)predicate {
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
-    
-    NSLog(@"%@",sortDescriptors);
-    
+
     [fetchRequest setSortDescriptors:sortDescriptors];
-    
+
     if (!(predicate==nil)) {
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat:[NSString stringWithFormat:@"%@", predicate]]];
     }
-    
+
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                         managedObjectContext:[[[RKObjectManager sharedManager] managedObjectStore] mainQueueManagedObjectContext]
                                                                           sectionNameKeyPath:nil
@@ -121,7 +113,7 @@
     if (![self.fetchedResultsController performFetch:&error]) {
         NSLog(@"Error fetching data: %@", error);
     }
-    
+
     [self.refreshControl endRefreshing];
 }
 
@@ -149,11 +141,11 @@
                 [self.tableView scrollToRowAtIndexPath:newIndexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
             }
             break;
-            
+
         case NSFetchedResultsChangeDelete:
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationTop];
             break;
-            
+
         case NSFetchedResultsChangeUpdate:
             [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             break;
@@ -179,7 +171,7 @@
     return [sectionInfo numberOfObjects];
 }
 
-#pragma mark - Custom Delete Methods
+#pragma mark - Custom Tableview Methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
