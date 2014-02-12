@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		BE04F22649EF4ADF8D60F20C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD7F8205B5940E88620CC5F /* libPods.a */; };
 		C317BAFE18AB2569002D1802 /* BWTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C317BAFD18AB2569002D1802 /* BWTableView.m */; };
+		C317BB0518AB35A4002D1802 /* UIViewController+AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C317BB0418AB35A4002D1802 /* UIViewController+AddressBook.m */; };
+		C317BB0B18AB3908002D1802 /* NavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C317BB0A18AB3908002D1802 /* NavBar.m */; };
 		C354829E18A7D51800F7DB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829D18A7D51800F7DB89 /* Foundation.framework */; };
 		C35482A018A7D51800F7DB89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829F18A7D51800F7DB89 /* CoreGraphics.framework */; };
 		C35482A218A7D51800F7DB89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35482A118A7D51800F7DB89 /* UIKit.framework */; };
 		C35482A818A7D51800F7DB89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C35482A618A7D51800F7DB89 /* InfoPlist.strings */; };
 		C35482AA18A7D51800F7DB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482A918A7D51800F7DB89 /* main.m */; };
 		C35482AE18A7D51800F7DB89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C35482AD18A7D51800F7DB89 /* AppDelegate.m */; };
-		C35482B118A7D51800F7DB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35482AF18A7D51800F7DB89 /* Main.storyboard */; };
 		C35482B618A7D51800F7DB89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35482B518A7D51800F7DB89 /* Images.xcassets */; };
 		C35482BD18A7D51800F7DB89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35482BC18A7D51800F7DB89 /* XCTest.framework */; };
 		C35482BE18A7D51800F7DB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C354829D18A7D51800F7DB89 /* Foundation.framework */; };
@@ -47,6 +48,10 @@
 		3AD7F8205B5940E88620CC5F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C317BAFC18AB2569002D1802 /* BWTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWTableView.h; sourceTree = "<group>"; };
 		C317BAFD18AB2569002D1802 /* BWTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWTableView.m; sourceTree = "<group>"; };
+		C317BB0318AB35A4002D1802 /* UIViewController+AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddressBook.h"; sourceTree = "<group>"; };
+		C317BB0418AB35A4002D1802 /* UIViewController+AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddressBook.m"; sourceTree = "<group>"; };
+		C317BB0918AB3908002D1802 /* NavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBar.h; sourceTree = "<group>"; };
+		C317BB0A18AB3908002D1802 /* NavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBar.m; sourceTree = "<group>"; };
 		C354829A18A7D51800F7DB89 /* ember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C354829D18A7D51800F7DB89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C354829F18A7D51800F7DB89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,7 +62,6 @@
 		C35482AB18A7D51800F7DB89 /* ember-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ember-Prefix.pch"; sourceTree = "<group>"; };
 		C35482AC18A7D51800F7DB89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C35482AD18A7D51800F7DB89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C35482B018A7D51800F7DB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C35482B518A7D51800F7DB89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C35482BB18A7D51800F7DB89 /* emberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35482BC18A7D51800F7DB89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -118,6 +122,8 @@
 				C35482D318A7D54B00F7DB89 /* CompletedView.m */,
 				C317BAFC18AB2569002D1802 /* BWTableView.h */,
 				C317BAFD18AB2569002D1802 /* BWTableView.m */,
+				C317BB0918AB3908002D1802 /* NavBar.h */,
+				C317BB0A18AB3908002D1802 /* NavBar.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 				C38A607118A97EF7008A3C44 /* UIAlertView+Blocks.m */,
 				C35482ED18A92E0400F7DB89 /* NSDate+Methods.h */,
 				C35482EE18A92E0400F7DB89 /* NSDate+Methods.m */,
+				C317BB0318AB35A4002D1802 /* UIViewController+AddressBook.h */,
+				C317BB0418AB35A4002D1802 /* UIViewController+AddressBook.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -193,7 +201,6 @@
 			children = (
 				C35482AC18A7D51800F7DB89 /* AppDelegate.h */,
 				C35482AD18A7D51800F7DB89 /* AppDelegate.m */,
-				C35482AF18A7D51800F7DB89 /* Main.storyboard */,
 				C317BB0218AB25A0002D1802 /* Controllers */,
 				C317BB0118AB2590002D1802 /* Models */,
 				C317BAFF18AB2576002D1802 /* Views */,
@@ -316,7 +323,6 @@
 			files = (
 				C35482B618A7D51800F7DB89 /* Images.xcassets in Resources */,
 				C35482A818A7D51800F7DB89 /* InfoPlist.strings in Resources */,
-				C35482B118A7D51800F7DB89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C317BB0518AB35A4002D1802 /* UIViewController+AddressBook.m in Sources */,
+				C317BB0B18AB3908002D1802 /* NavBar.m in Sources */,
 				C35482EC18A9259D00F7DB89 /* User.m in Sources */,
 				C35482E318A7D54B00F7DB89 /* UsersViewController.m in Sources */,
 				C35482AE18A7D51800F7DB89 /* AppDelegate.m in Sources */,
@@ -408,14 +416,6 @@
 				C35482A718A7D51800F7DB89 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C35482AF18A7D51800F7DB89 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C35482B018A7D51800F7DB89 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C35482C518A7D51800F7DB89 /* InfoPlist.strings */ = {

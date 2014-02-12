@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MCSwipeTableViewCell/MCSwipeTableViewCell.h>
+#import "User.h"
 
 @interface UserCell : MCSwipeTableViewCell
+
+@property (strong, nonatomic) User *user;
+
+-(void)setupCell;
 
 @end
