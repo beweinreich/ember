@@ -22,7 +22,6 @@
         NSLog(@"Recieved Notification %@",localNotif);
     }
     
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithNavigationBarClass:[NavBar class] toolbarClass:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[UsersViewController alloc] initWithNibName:nil bundle:nil]];
     [navigationController setValue:[[NavBar alloc]init] forKeyPath:@"navigationBar"];
     [self.window setRootViewController:navigationController];

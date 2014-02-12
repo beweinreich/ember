@@ -28,18 +28,14 @@
 {
     [super viewDidLoad];
         
-    // Setup navigation bar
     [self setupNavigationBar];
     
-    // Setup tableView
     self.tableView = [[BWTableView alloc] initWithFrame:self.tableView.frame];
     
-    // Setup refresh control
     UIRefreshControl *refreshControl = [UIRefreshControl new];
     [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
     
-    // Refresh the data
     [self refresh];
 }
 
@@ -55,7 +51,7 @@
     [self.tableView reloadData];
     NSSortDescriptor *sortByDate = [NSSortDescriptor sortDescriptorWithKey:@"reminderDate" ascending:YES];
     NSSortDescriptor *sortByHasReminder = [NSSortDescriptor sortDescriptorWithKey:@"hasReminder" ascending:NO];
-    [self fetchFromLocal:@"User" andSortDescriptors:@[sortByDate, sortByHasReminder] andPredicate:@"(tracking == 1)"];
+    [self fetchFromLocal:@"User" andSortDescriptors:@[sortByHasReminder, sortByDate] andPredicate:@"(tracking == 1)"];
 }
 
 
@@ -107,6 +103,8 @@
 
 - (void)fetchFromLocal:(NSString *)entityName andSortDescriptors:(NSArray *)sortDescriptors andPredicate:(NSString *)predicate {
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:entityName];
+    
+    NSLog(@"%@",sortDescriptors);
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
